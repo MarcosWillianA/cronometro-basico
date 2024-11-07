@@ -7,15 +7,19 @@ let [milissegundos, segundos, minutos, horas] = [0, 0, 0, 0];
 let int;
 
 start.addEventListener('click', () => {
-    int = setInterval(mostrarCronometro, 10);
+    if (!int) {
+        int = setInterval(mostrarCronometro, 10);
+    }
 })
 
 pause.addEventListener('click', () => {
     clearInterval(int);
+    int = null;
 })
 
 reset.addEventListener('click', () => {
     clearInterval(int);
+    int = null;
     [milissegundos, segundos, minutos, horas] = [0, 0, 0, 0];
     display.innerHTML = '00 : 00 : 00 : 000';
 })
