@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    max-width: 320px;
+    height: 100vh;
+    padding: 10px;
+}
+
+#cronometro {
+    display: flex;
+    justify-content: center;
+    width: 240px;
+    height: 180px;
+    align-self: center;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #1C1917;
+    position: relative;
+}
+
+#tempo {
+    width: 280px;
+    align-self: flex-start;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #38BDF8;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+    position: absolute;
+    top: 25px;
+}
+
+#botoes {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.botao {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.botao:active {
+    background-color: #94A3B8;
+    color: #DC2626;
+}
